@@ -1,0 +1,58 @@
+{
+	"MaterialUI - Bulk Imports": {
+		"prefix": "muiBulkImport",
+		"body": [
+			"import withStyles, { WithStyles } from \"@material-ui/core/styles/withStyles\";",
+		],
+		"description": "Commonly used MUI modules.",
+	},
+	"React - Function Component": {
+		"prefix": "functionComponent",
+		"body": [
+			"import React, { FunctionComponent } from \"react\";",
+			"",
+			"export interface ${TM_FILENAME_BASE}Props {",
+			"\t",
+			"}",
+			"",
+			"export const ${TM_FILENAME_BASE}: FunctionComponent<${TM_FILENAME_BASE}Props> = props => {",
+			"\t$0",
+			"\treturn (",
+			"\t\t<></>",
+			"\t);",
+			"};",
+			"",
+		],
+		"description": "The base structure for a React FunctionComponent.",
+	},
+	"StorybookReact - Stories Of": {
+		"prefix": "storiesOf",
+		"body": [
+			"import React from \"react\";",
+			"import { storiesOf } from \"@storybook/react\";",
+			"import { $1 } from \"./$1\";",
+			"",
+			"storiesOf(\"$1\", module)",
+			"\t.add(\"$2\", () => {",
+			"\t\t$0",
+			"\t\treturn <>",
+			"\t\t\t<$1 />",
+			"\t\t</>;",
+			"\t});",
+			"",
+		],
+		"description": "The base structure for a React Storybook file in TSX.",
+	},
+	"StorybookReact - Add Story": {
+		"prefix": "addStory",
+		"body": [
+			"",
+			".add(\"$1\", () => {",
+			"\treturn <>",
+			"\t\t$0",
+			"\t</>;",
+			"})",
+		],
+		"description": "Creates a new story.",
+	},
+}
